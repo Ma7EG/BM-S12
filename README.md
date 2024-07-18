@@ -1,5 +1,5 @@
 
-# ♥ SpongeBob Memory Game ♥
+# ♥ SpongeBob  Game ♥
 
 Welcome to the SpongeBob  Game!
 
