@@ -21,17 +21,10 @@ function runScript() {
     const totalTwo = 8;
     let timeout;
 
-    function shuffle(array) {
-        let currentIndex = array.length;
-        let tempVar, randomIndex;
-    
-        while (currentIndex !== 0) {
-            randomIndex = (Math.random() * currentIndex) | 0;
-            currentIndex--;
-    
-            tempVar = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = tempVar;
+  function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
         }
     
     
